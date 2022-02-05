@@ -16,6 +16,7 @@ function ShoppingList({ items }) {
 
   return (
     <div className="ShoppingList">
+      {/* Filter */}
       <div className="Filter">
         <select name="filter" onChange={handleCategoryChange}>
           <option value="All">Filter by category</option>
@@ -24,6 +25,7 @@ function ShoppingList({ items }) {
           <option value="Dessert">Dessert</option>
         </select>
       </div>
+      {/* Items */}
       <ul className="Items">
         {itemsToDisplay.map((item) => (
           <Item key={item.id} name={item.name} category={item.category} />
