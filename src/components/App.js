@@ -14,7 +14,7 @@ function App() {
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       {/* Header */}
       <Header 
-        handleDarkModeClick={handleDarkModeClick} 
+        onDarkModeClick={handleDarkModeClick} 
         isDarkMode={isDarkMode}
       />
       {/* Shopping List */}
